@@ -1,0 +1,7 @@
+chatbot.dialogflow_form:
+  path: '/admin/config/chatbot-configuration'
+  defaults:
+    _form: '\Drupal\chatbot\Form\ChatbotConfigurationForm'
+    _title: 'Dialogflow configuration'
+  requirements:
+    _permission: 'administer site configuration'

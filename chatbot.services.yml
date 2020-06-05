@@ -1,0 +1,10 @@
+services:
+  logger.channel.chatbot:
+    parent: logger.channel_base
+    arguments: ['chatbot']
+  chatbot.intents:
+    class: Drupal\chatbot\Services\ChatbotDetectIntent
+    arguments: ['@config.factory']
+  covid.statistics:
+    class: Drupal\chatbot\Services\CovidStatistics
+    arguments: ['@http_client']

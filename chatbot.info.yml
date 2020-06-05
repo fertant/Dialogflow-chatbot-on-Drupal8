@@ -1,0 +1,5 @@
+name: 'chatbot'
+type: module
+description: 'Dialogflow chatbot module with Angular block UI'
+core: 8.x
+package: 'Custom'
